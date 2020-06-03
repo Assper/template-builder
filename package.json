@@ -1,0 +1,38 @@
+{
+  "name": "template-builder",
+  "version": "1.0.0",
+  "description": "simple web templates builder powering by gulp",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run clean && npm run watch",
+    "clean": "gulp clean",
+    "watch": "gulp build && gulp watch",
+    "build": "npm run clean && cross-env NODE_ENV=production gulp build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "template",
+    "builder"
+  ],
+  "author": "Assper",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "babel-loader": "^8.1.0",
+    "browser-sync": "^2.26.7",
+    "cross-env": "^7.0.2",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.1",
+    "pug": "^3.0.0",
+    "svelte-loader": "^2.13.6",
+    "webpack": "^4.43.0",
+    "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+    "svelte": "^3.23.0"
+  }
+}
